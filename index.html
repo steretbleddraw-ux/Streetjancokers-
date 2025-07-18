@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetJancokers - Musik Jalanan</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="StreetJancokers Logo">
+    <h1>StreetJancokers</h1>
+  </div>
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#playlist">Playlist</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2 class="fade-in">Musik Jalanan, Jiwa Kebebasan</h2>
+  <p class="fade-in">Kami adalah komunitas musik jalanan yang mendobrak batas!</p>
+  <a href="#playlist" class="btn-neon">Dengarkan Musik</a>
+</section>
+
+<section id="about">
+  <h2>Tentang Kami</h2>
+  <p>StreetJancokers adalah komunitas pecinta musik jalanan. Kami berkarya di jalanan, menghibur, dan menginspirasi!</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery Street Art</h2>
+  <div class="slider">
+    <img src="images/gallery1.jpg" alt="Gallery 1">
+    <img src="images/gallery2.jpg" alt="Gallery 2">
+    <img src="images/gallery3.jpg" alt="Gallery 3">
+  </div>
+</section>
+
+<section id="playlist">
+  <h2>Playlist Kami</h2>
+  <div class="audio-player">
+    <audio id="audio" src="audio/track1.mp3"></audio>
+    <div class="controls">
+      <button onclick="prevTrack()">⏮</button>
+      <button onclick="togglePlay()">▶️</button>
+      <button onclick="nextTrack()">⏭</button>
+    </div>
+    <div class="progress-container" onclick="seek(event)">
+      <div class="progress" id="progress"></div>
+    </div>
+    <p id="track-title">Track 1</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Kontak Kami</h2>
+  <form>
+    <input type="text" placeholder="Nama" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Pesan" required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+  <div class="social-links">
+    <a href="#" class="instagram">Instagram</a>
+    <a href="#" class="youtube">YouTube</a>
+    <a href="#" class="tiktok">TikTok</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 StreetJancokers. Semua hak dilindungi.</p>
+</footer>
+</body>
+</html>
